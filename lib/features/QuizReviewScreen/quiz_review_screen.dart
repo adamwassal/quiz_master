@@ -68,15 +68,7 @@ class QuizReviewScreen extends StatelessWidget {
                         }
                         if (!userSnapshot.hasData ||
                             !userSnapshot.data!.exists) {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => QuizScreen(
-                                quizId: quizId,
-                                category: category,
-                              ),
-                            ),
-                          );
+                         
                           return const Center(
                             child: Text('No answers found for this quiz'),
                           );
